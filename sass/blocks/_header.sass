@@ -1,0 +1,44 @@
+.header
+  padding: 24px 
+  &__main-content
+    display: flex
+    align-items: center
+    justify-content: space-around
+  &__nav
+    &-link
+      padding: 2px
+      font-size: 16px;
+      line-height: 15px
+      color: #181818
+      text-decoration: none
+    &-link:not(:last-child)
+      margin-right: 30px
+    &-link:hover
+      border-bottom: 1px solid #CBC56C
+  &__contact-content
+    display: flex
+    flex-direction: column
+    text-align: right
+  &__phone
+    display: inline-block
+    margin-bottom: 4px
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #181818;
+    text-decoration: none
+  &__callback 
+    display: block
+    font-size: 16px
+    line-height: 20px
+    letter-spacing: 0.01em;
+    color: #181818;
+    text-decoration: none
+  &__line::after
+    content: ''
+    display: block
+    width: 149px
+    height: 1px
+    margin: 3px 0 0 35px
+    background-color: #CBC56C
