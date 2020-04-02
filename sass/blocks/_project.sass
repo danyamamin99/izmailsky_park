@@ -1,0 +1,40 @@
+.project
+  margin: 80px 70px
+  &__content
+    display: flex
+    justify-content: space-around
+  &__quote
+    width: 65%
+    margin-right: 90px
+    &-block p
+      margin: 0
+      margin-bottom: 16px
+      font-size: 36px
+      line-height: 110%
+      letter-spacing: 0.01em 
+    &-block
+      position: relative
+    &-block::before
+      content: ''
+      width: 60px
+      height: 60px
+      position: absolute
+      background-image: url('../img/project/quote.svg')
+      background-repeat: no-repeat
+      background-size: 60px
+      top: -22px
+      left: -22px
+    &-gen-dir
+      font-size: 14px
+      line-height: 120%
+  &__item
+    position: relative
+  &__item:before
+    content: ''
+    position: absolute
+    height: 100%
+    width: 100%
+    background-image: url('../img/project/blockTwo_project.png')
+    background-repeat: no-repeat
+    top: 24px
+    left: -24px
