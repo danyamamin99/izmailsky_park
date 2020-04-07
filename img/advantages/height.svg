@@ -1,0 +1,17 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="28.7266" y="1.7627" width="8" height="36.5051" stroke="#CBC56C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="25.25" y1="1.75" x2="23.75" y2="1.75" stroke="#CBC56C" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="21.25" y1="1.75" x2="19.75" y2="1.75" stroke="#CBC56C" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="17.25" y1="1.75" x2="15.75" y2="1.75" stroke="#CBC56C" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="13.25" y1="1.75" x2="11.75" y2="1.75" stroke="#CBC56C" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="9.25" y1="1.75" x2="7.75" y2="1.75" stroke="#CBC56C" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="5.25" y1="1.75" x2="3.75" y2="1.75" stroke="#CBC56C" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="25.25" y1="38.2883" x2="23.75" y2="38.2883" stroke="#CBC56C" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="21.25" y1="38.2883" x2="19.75" y2="38.2883" stroke="#CBC56C" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="17.25" y1="38.2883" x2="15.75" y2="38.2883" stroke="#CBC56C" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="13.25" y1="38.2883" x2="11.75" y2="38.2883" stroke="#CBC56C" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="9.25" y1="38.2883" x2="7.75" y2="38.2883" stroke="#CBC56C" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="5.25" y1="38.2883" x2="3.75" y2="38.2883" stroke="#CBC56C" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M7.75 22C7.75 21.5858 7.41421 21.25 7 21.25C6.58579 21.25 6.25 21.5858 6.25 22L7.75 22ZM6.46967 32.5303C6.76256 32.8232 7.23744 32.8232 7.53033 32.5303L12.3033 27.7574C12.5962 27.4645 12.5962 26.9896 12.3033 26.6967C12.0104 26.4038 11.5355 26.4038 11.2426 26.6967L7 30.9393L2.75736 26.6967C2.46447 26.4038 1.98959 26.4038 1.6967 26.6967C1.40381 26.9896 1.40381 27.4645 1.6967 27.7574L6.46967 32.5303ZM6.25 22L6.25 32L7.75 32L7.75 22L6.25 22Z" fill="#CBC56C"/>
+<path d="M6.25 18C6.25 18.4142 6.58579 18.75 7 18.75C7.41421 18.75 7.75 18.4142 7.75 18L6.25 18ZM7.53033 7.46967C7.23744 7.17678 6.76256 7.17678 6.46967 7.46967L1.6967 12.2426C1.40381 12.5355 1.40381 13.0104 1.6967 13.3033C1.98959 13.5962 2.46447 13.5962 2.75736 13.3033L7 9.06066L11.2426 13.3033C11.5355 13.5962 12.0104 13.5962 12.3033 13.3033C12.5962 13.0104 12.5962 12.5355 12.3033 12.2426L7.53033 7.46967ZM7.75 18L7.75 8L6.25 8L6.25 18L7.75 18Z" fill="#CBC56C"/>
+</svg>

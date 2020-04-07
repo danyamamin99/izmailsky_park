@@ -39,3 +39,36 @@ body
 .container 
     max-width: 1300px
     margin: auto
+
+.button
+    display: flex
+    width: 108px
+    height: 54px
+    &__prev, &__next
+        width: 54px
+        height: 54px
+        border: none
+        cursor: pointer
+    &__prev
+        background: #BFB84A
+        background-image: url('../img/arrow.svg')
+        background-repeat: no-repeat
+        background-position: center center
+        transform: rotate(180deg)
+    &__next
+        background: #CBC56C
+        background-image: url('../img/arrow.svg')
+        background-repeat: no-repeat
+        background-position: center center
+.btn-right, .btn-left
+  position: absolute
+  bottom: 0
+  right: 0
+  z-index: 10
+.btn-left
+  bottom: -1px
+  left: 0
+button:active, button:focus
+    outline-style: none
+    outline-width: 0px !important
+    outline-color: none !important

@@ -14,7 +14,7 @@
       </a>
       <nav class="header__nav ">
         <div class="header__nav-list">
-          <a href="" class="header__nav-link">О проекте</a>
+          <a href="#project" class="header__nav-link">О проекте</a>
           <a href="" class="header__nav-link">Расположение</a>
           <a href="" class="header__nav-link">Планировки</a>
           <a href="" class="header__nav-link">Ипотека</a>
@@ -68,7 +68,7 @@
           <span class="feature-item__desc">Переменная этажность</span>
           <p class="feature-item__text">12-14 этажей</p>
         </div>
-        <div class="feature__item">
+        <div class="feature__item"> 
           <span class="feature-item__desc">Класс жилья</span>
           <p class="feature-item__text">Авторская архитектура,<br>бизнес-класс</p>
         </div>
@@ -80,6 +80,111 @@
       </div>
     </div>
   </section>
-  <!-- <script src="js/main.js"></script> -->
+
+  <section class="advantages">
+    <div class="container">
+      <div class="advantages__block">
+        <div class="advantages__block-item">
+          <div class="advantages__wrap">
+            <div class="advantages__wrap-slider">
+              <img src="img/advantages/sliderO.png" alt="Слайдер" class="advantages__img img_active environmentImgSlide">
+              <img src="img/advantages/sliderT.png" alt="Слайдер" class="advantages__img environmentImgSlide">
+              <img src="img/advantages/sliderTh.png" alt="Слайдер" class="advantages__img environmentImgSlide">
+            </div>
+            <div class="button btn-right">
+              <button class="button__prev" id="environmentPrev"></button>
+              <button class="button__next" id="environmentNext"></button>
+            </div>
+          </div>
+          <div class="advantages__content">
+            <h3 class="advantages__subtitle">Окружение</h3>
+            <div class="advantages__desc">
+              <img src="img/advantages/forest.svg" alt="Дерево">
+              <span class="advantages__text">40 гектар зеленой рощи</span>
+            </div>
+            <div class="advantages__desc">
+              <img src="img/advantages/shopping.svg" alt="ТЦ Горизонт">
+              <span class="advantages__text">ТЦ «Горизонт» в 5 минутах езды</span>
+            </div>
+            <div class="advantages__desc">
+              <img src="img/advantages/exercise.svg" alt="Фитнес-клуб">
+              <span class="advantages__text">Фитнес-клуб «VARVAR»</span>
+            </div>
+            <div class="advantages__desc">
+              <img src="img/advantages/student.svg" alt="Школа/сад">
+              <span class="advantages__text">Детские сады и школы в шаговой доступности</span>
+            </div>
+          </div>
+        </div>
+        <div class="advantages__block-item">
+          <div class="advantages__wrap advantages__wrap-dvor ">
+            <div class="advantages__wrap-slider">
+              <img src="img/advantages/sliderT.png" alt="Слайдер" class="advantages__img img_active yardImgSlide">
+              <img src="img/advantages/sliderO.png" alt="Слайдер" class="advantages__img yardImgSlide">
+              <img src="img/advantages/sliderTh.png" alt="Слайдер" class="advantages__img yardImgSlide">
+            </div>
+            <div class="button btn-left">
+              <button class="button__prev" id="yardPrev"></button>
+              <button class="button__next" id="yardNext"></button>
+            </div>
+          </div>
+          <div class="advantages__content advantages__content-dvor">
+            <h3 class="advantages__subtitle">Двор</h3>
+            <div class="advantages__desc">
+              <img src="img/advantages/stop.svg" alt="Стор">
+              <span class="advantages__text">Закрытый охраняемый двор без машин</span>
+            </div>
+            <div class="advantages__desc">
+              <img src="img/advantages/jungle.svg" alt="Игровая площадка">
+              <span class="advantages__text">Разновозрастные игровые площадки</span>
+            </div>
+            <div class="advantages__desc">
+              <img src="img/advantages/park.svg" alt="Парк">
+              <span class="advantages__text">Ландшафтный дизайн и прогулочные аллеи</span>
+            </div>
+            <div class="advantages__desc">
+              <img src="img/advantages/wifi.svg" alt="Wifi">
+              <span class="advantages__text">Зоны BBQ, беседки, Wi-Fi </span>
+            </div>
+          </div>
+        </div>
+        <div class="advantages__block-item">
+          <div class="advantages__wrap">
+            <div class="advantages__wrap-slider">
+              <img src="img/advantages/sliderTh.png" alt="Слайдер" class="advantages__img img_active roomImgSlide">
+              <img src="img/advantages/sliderO.png" alt="Слайдер" class="advantages__img roomImgSlide">
+              <img src="img/advantages/sliderT.png" alt="Слайдер" class="advantages__img roomImgSlide">
+            </div>
+            <div class="button btn-right">
+              <button class="button__prev" id="roomPrev"></button>
+              <button class="button__next" id="roomNext"></button>
+            </div>
+          </div>
+          <div class="advantages__content">
+            <h3 class="advantages__subtitle">Квартира</h3>
+            <div class="advantages__desc">
+              <img src="img/advantages/chimney.svg" alt="Камин">
+              <span class="advantages__text">От ситихаусов до квартир с камином</span>
+            </div>
+            <div class="advantages__desc">
+              <img src="img/advantages/height.svg" alt="Потолок">
+              <span class="advantages__text">Высота потолков – 3 м</span>
+            </div>
+            <div class="advantages__desc">
+              <img src="img/advantages/heater.svg" alt="Отопление">
+              <span class="advantages__text">Система автономного отопления</span>
+            </div>
+            <div class="advantages__desc">
+              <img src="img/advantages/window.svg" alt="Окно">
+              <span class="advantages__text">Окна Rehau</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/Slider.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

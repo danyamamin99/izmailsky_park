@@ -1,0 +1,79 @@
+.advantages
+  &__block::before
+    content: ''
+    width: 1px
+    height: 81px
+    display: block
+    position: relative
+    top: 0
+    left: 140px
+    background: #CBC56C
+  &__block::after
+    content: ''
+    width: 440.46px
+    height: 1px
+    display: block
+    position: relative
+    top: 0
+    left: 902px
+    transform: rotate(155.88deg);
+    background: #CBC56C
+  &__block
+    &-item
+      display: flex
+      justify-content: space-between
+  &__wrap
+    width: 650px
+    height: 430px
+    position: relative
+    &-dvor
+      order: 2
+    &-dvor::before
+      content: ''
+      width: 220px
+      height: 1px
+      display: block
+      position: relative
+      left: -180px
+      top: 60px
+      transform: rotate(44.5deg)
+      background-color: #CBC56C
+      z-index: -1
+    &-slider
+      width: 650px
+      height: 430px
+      overflow: hidden
+      position: relative
+  &__img 
+    width: 650px
+    height: 430px
+    object-fit: cover
+    position: absolute
+    opacity: 0
+    transition: opacity 1.3s linear
+  &__content
+    width: 50%
+    margin-left: 72px
+    &-dvor
+      order: 1
+  &__subtitle
+    margin: 0
+    margin-top: 40px
+    margin-bottom: 40px
+    font-size: 32px
+    line-height: 120%
+    letter-spacing: 0.01em
+    text-transform: uppercase
+  &__desc
+    display: flex
+    align-items: center
+    margin-bottom: 32px
+  &__text
+    display: block
+    margin-left: 32px
+    font-size: 18px
+    line-height: 120%
+
+.img_active
+  opacity: 1
+  transition: opacity 1.3s linear
