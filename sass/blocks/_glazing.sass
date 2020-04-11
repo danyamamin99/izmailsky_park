@@ -1,0 +1,50 @@
+.glazing
+  padding: 80px 100px
+  &__content
+    display: flex
+    justify-content: space-between
+    align-items: center
+    position: relative
+  &__title
+    font-weight: normal
+    font-size: 32px
+    line-height: 120%
+    letter-spacing: 0.01em
+    text-transform: uppercase
+  &__subtitle
+    font-size: 18px
+    line-height: 120%
+    letter-spacing: 0.01em
+  &__line
+    content: ''
+    display: block
+    width: 1px
+    height: 184px
+    background: #CBC56C
+    position: absolute
+    left: 50%
+    top: -80px
+  &__wrap
+    position: relative
+    width: 1160px
+    height: 600px
+    margin: auto
+    &-slider
+      position: relative
+      width: 1160px      
+      height: 600px
+      overflow: hidden
+    &__slide
+      position: absolute
+      width: 1160px      
+      height: 600px
+      object-fit: cover
+      opacity: 0
+      transition: opacity .6s linear
+  &__btn_position
+    top: 120px
+    right: -54px
+
+.img_active
+  opacity: 1
+  transition: opacity .6s linear
