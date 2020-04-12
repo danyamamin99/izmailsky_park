@@ -33,4 +33,27 @@ nextBtnRoom.addEventListener('click', roomSlider.nextSlide.bind(roomSlider));
 prevBtnPanoram.addEventListener('click', glazingSlider.prevSlide.bind(glazingSlider));
 nextBtnPanorem.addEventListener('click', glazingSlider.nextSlide.bind(glazingSlider));
 
+// Вкладки
+let tabsList = document.querySelector('.layout__floor-tabs__list'),
+    tabsLink = document.querySelectorAll('.layout__floor-tabs__link'),
+    tabsBlock = document.querySelectorAll('.layout__floor-tabs__block');
+
+tabsList.addEventListener('click', (event) => {
+  event.preventDefault();
+
+  if (event.target.classList.contains('layout__floor-tabs__link')) {
+    let id = event.target.getAttribute('href');
+    
+    for (let i = 0; i < tabsBlock.length; i++) {
+      if (tabsBlock[i].dataset.id == id) {
+        tabsBlock[i].classList.remove('tabs_noactive');
+        tabsLink[i].classList.add('tab__link_active');
+      } else {
+        tabsBlock[i].classList.add('tabs_noactive');
+        tabsLink[i].classList.remove('tab__link_active');
+      }
+    }
+  }
+});
+
 

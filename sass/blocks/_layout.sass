@@ -1,0 +1,54 @@
+.layout
+  margin-bottom: 80px
+  &-block
+    display: flex
+    justify-content: space-around
+    flex-direction: column
+    padding: 0 75px
+  &__title
+    margin: 0
+    margin-bottom: 40px
+    font-size: 32px
+    line-height: 120%
+    letter-spacing: 0.01em
+    text-transform: uppercase
+    font-weight: normal
+  &__floor-tabs
+    &__list
+      margin-bottom: 30px
+    &__link
+      padding: 2px
+      font-size: 16px
+      line-height: 26px
+      text-decoration: none
+      color: #181818
+      &:not(:last-child)
+        margin-right: 40px
+      &:hover 
+        border-bottom: 1px solid #181818
+    &__block
+      display: flex
+      justify-content: space-between
+    &__item
+      flex: 0.3
+      padding: 30px
+      border: 1px solid #F2F2F2
+    &__title
+      font-weight: 500
+      font-size: 18px
+      line-height: 120%
+    &__subtitle
+      display: block
+      font-size: 16px
+      line-height: 100%
+      margin-bottom: 32px
+    &__price
+      font-size: 18px
+      line-height: 120%
+      color: #CBC56C
+      font-weight: bold
+
+.tabs_noactive 
+  display: none
+.tab__link_active
+  border-bottom: 1px solid #181818_
