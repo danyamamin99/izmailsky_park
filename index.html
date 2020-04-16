@@ -16,9 +16,9 @@
         <div class="header__nav-list">
           <a href="#project" class="header__nav-link">О проекте</a>
           <a href="" class="header__nav-link">Расположение</a>
-          <a href="" class="header__nav-link">Планировки</a>
+          <a href="#planirovka" class="header__nav-link">Планировки</a>
           <a href="" class="header__nav-link">Ипотека</a>
-          <a href="" class="header__nav-link">Контакты</a>          
+          <a href="#contakt" class="header__nav-link">Контакты</a>          
         </div>
       </nav>
       <div class="header__contact-content">
@@ -96,7 +96,7 @@
             </div>
           </div>
           <div class="advantages__content">
-            <h3 class="advantages__subtitle">Окружение</h3>
+            <h3 class="advantages__subtitle title">Окружение</h3>
             <div class="advantages__desc">
               <img src="img/advantages/forest.svg" alt="Дерево">
               <span class="advantages__text">40 гектар зеленой рощи</span>
@@ -128,7 +128,7 @@
             </div>
           </div>
           <div class="advantages__content advantages__content-dvor">
-            <h3 class="advantages__subtitle">Двор</h3>
+            <h3 class="advantages__subtitle title">Двор</h3>
             <div class="advantages__desc">
               <img src="img/advantages/stop.svg" alt="Стор">
               <span class="advantages__text">Закрытый охраняемый двор без машин</span>
@@ -160,7 +160,7 @@
             </div>
           </div>
           <div class="advantages__content">
-            <h3 class="advantages__subtitle">Квартира</h3>
+            <h3 class="advantages__subtitle title">Квартира</h3>
             <div class="advantages__desc">
               <img src="img/advantages/chimney.svg" alt="Камин">
               <span class="advantages__text">От ситихаусов до квартир с камином</span>
@@ -188,11 +188,11 @@
       <div class="presentation-block">
         <div class="presentation__content">
           <form name="presentation__form">
-            <h2 class="presentation__form__title">Получить презентацию жилого комплекса</h2>
+            <h2 class="presentation__form__title title">Получить презентацию жилого комплекса</h2>
             <span class="presentation__form__subtitle">Полная презентация любым удобным для&nbsp;Вас способом</span>
             <div class="presentation__form__field">
-              <input type="tel" name="phonePresentation" class="presentation__form__input" placeholder="+ 7" required>
-              <p class="presentation__form__text">Нажимая на кнопку «Заказать подбор», вы соглашается <br>с условиями Политики обработки персональных данных</p>
+              <input type="tel" name="phonePresentation" class="input presentation__form__input" placeholder="+ 7" required>
+              <p class="presentation__form__text">Нажимая на&nbsp;кнопку &laquo;Заказать подбор&raquo;, вы&nbsp;соглашается с&nbsp;условиями Политики обработки персональных данных</p>
             </div>
             <div class="presentation__form__social">
               <a href="#" class="presentation__form__btn btn">WhatsApp</a>
@@ -213,7 +213,7 @@
     <div class="container">
       <div class="glazing-block">
         <div class="glazing__content">
-          <h2 class="glazing__title">Панорамное остекление</h2>
+          <h2 class="glazing__title title">Панорамное остекление</h2>
            <span class="glazing__line"></span>
           <p class="glazing__subtitle">Из окон открываются живописные виды.<br>Можно буквально прикоснуться к природе.</p>
         </div>
@@ -231,10 +231,10 @@
     </div>
   </section>
 
-  <section class="layout">
+  <section id="planirovka" class="layout">
     <div class="container">
       <div class="layout-block">
-        <h2 class="layout__title">Планировка</h2>
+        <h2 class="layout__title title">Планировка</h2>
         <div class="layout__floor-tabs">
           <div class="layout__floor-tabs__list">
             <a href="oneRoom" class="layout__floor-tabs__link tab__link_active">1-комнатная</a>
@@ -350,6 +350,83 @@
       </div>
     </div>
   </section>
+
+  <section class="social">
+    <div class="container">
+      <div class="social-block">
+        <h2 class="social__title title">Наш instagram</h2>
+        <div class="social-gallery">
+          <img src="img/social/img.png" alt="Картинка" class="social__image">
+          <img src="img/social/img.png" alt="Картинка" class="social__image">
+          <img src="img/social/img.png" alt="Картинка" class="social__image">
+          <img src="img/social/img.png" alt="Картинка" class="social__image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contakt" class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__block">
+          <form class="footer__form">
+            <h2 class="footer__form__title">Получить персонального менеджера</h2>
+            <span class="footer__form__subtitle">
+              Оставьте свой номер телефона, и&nbsp;ваш персональный менеджер свяжется с&nbsp;вами в&nbsp;течение 5&nbsp;минут
+            </span>
+            <div class="footer__form__field">
+              <input type="tel" name="phoneFooter" class="footer__form__input input" placeholder="+ 7" required>
+              <p class="footer__form__text">Нажимая на&nbsp;кнопку &laquo;Заказать подбор&raquo;, вы&nbsp;соглашается с&nbsp;условиями Политики обработки персональных данных</p>
+            </div>
+            <button class="footer__button btn" type="submit">Оставить заявку</button>
+          </form>
+        </div>
+        <div class="footer__block">
+          <div class="footer__phones">
+            <div class="footer__item-block">
+              <h3 class="footer__item-title footer__smalltitle">офис продаж:</h3>
+              <a href="tel:+78633332870" class="footer__phone">+7 863 333-28-70</a>
+            </div>
+            <div class="footer__item-block">
+              <h3 class="footer__item-title footer__smalltitle">запись на экскурсию:</h3>
+              <a href="tel:+79198981009" class="footer__phone">+7 919 898-10-09</a>
+            </div>
+          </div>
+          <div class="footer__address">
+            <h3 class="footer__address-title footer__smalltitle">адрес офиса продаж:</h3>
+            <span class="footer__address-subtitle">г. Ростов-на-Дону, пер. Измаильский, 41 (пн-сб с 10:00 до 18:00)</span>
+          </div>
+          <div class="footer__chat">
+            <div class="footer__chat-title">
+              <h3 class="footer__smalltitle">чат с нами:</h3>
+            </div>
+            <div class="footer__chat-btn">
+              <a href="#" class="footer__button btn">WhatsApp</a>
+              <a href="#" class="footer__button btn">Telegram</a>
+              <a href="#" class="footer__button btn">Viber</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="policy">
+    <div class="container">
+      <div class="policy__block">
+        <div class="policy-desc">
+          <p>
+            Любая информация и&nbsp;материалы, представленные на&nbsp;данном сайте, носит исключительно информационный характер.<br>Все права на&nbsp;публикуемые на&nbsp;сайте материалы принадлежат ООО &laquo;Альянс&raquo; &copy;&nbsp;2020&nbsp;г. 
+            <br>Отправляя свои данные через формы данного сайта, вы&nbsp;соглашаетесь <br>с&nbsp;Политикой в&nbsp;отношении обработки персональных данных
+          </p>
+        </div>
+        <div class="policy-links">
+          <a href="#policy" class="policy__link">Документы ЖК и застройщика</a>
+          <a href="#policy" class="policy__link">Политика обработки персональных данных</a>
+        </div> 
+      </div>
+    </div>
+  </div>
 
   <script src="js/Slider.js"></script>
   <script src="js/main.js"></script>
