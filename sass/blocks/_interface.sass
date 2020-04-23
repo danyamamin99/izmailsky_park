@@ -35,6 +35,7 @@ body
   color: #181818
   margin: 0
   padding: 0
+  overflow-x: hidden
 
 .container 
     max-width: 1300px
@@ -42,10 +43,10 @@ body
 
 .button
     display: flex
-    width: 108px
+    width: 107px
     height: 54px
     &__prev, &__next
-        width: 54px
+        width: 50%
         height: 54px
         border: none
         cursor: pointer
@@ -72,7 +73,7 @@ body
 .btn-right, .btn-left
   position: absolute
   bottom: 0
-  right: 0
+  right: -1px
   z-index: 10
 .btn-left
   bottom: -1px

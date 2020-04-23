@@ -40,6 +40,7 @@ body {
   color: #181818;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 .container {
@@ -51,12 +52,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 108px;
+  width: 107px;
   height: 54px;
 }
 
 .button__prev, .button__next {
-  width: 54px;
+  width: 50%;
   height: 54px;
   border: none;
   cursor: pointer;
@@ -92,7 +93,7 @@ body {
 .btn-right, .btn-left {
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: -1px;
   z-index: 10;
 }
 
@@ -697,6 +698,357 @@ button:active, button:focus, input:focus {
 
 .tab__link_active {
   border-bottom: 1px solid #181818;
+}
+
+.form-title, .form-price, .form-percent {
+  display: block;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 14px;
+  margin-bottom: 24px;
+}
+
+.form-price, .form-percent {
+  margin-bottom: 8px;
+}
+
+.ipoteka {
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.ipoteka::after {
+  content: '';
+  display: block;
+  background: #CBC56C;
+  width: 1px;
+  height: 1419px;
+  position: absolute;
+  bottom: -980px;
+  right: 500px;
+  z-index: -1;
+  -webkit-transform: rotate(-120deg);
+          transform: rotate(-120deg);
+}
+
+.ipoteka__title {
+  position: absolute;
+  top: 30%;
+  left: 0%;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+.ipoteka__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 75px;
+}
+
+.ipoteka__form {
+  width: 38%;
+  background-color: #413046;
+  padding: 40px;
+  color: #ffffff;
+  margin-right: 10px;
+}
+
+.ipoteka__form__title {
+  margin: 0;
+  margin-bottom: 32px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+.ipoteka__form-price, .ipoteka__form-fee, .ipoteka__form-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.ipoteka__form__fee-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ipoteka__form-state {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ipoteka__form__state-content {
+  margin-left: 16px;
+}
+
+.ipoteka__form__state-title {
+  margin: 0;
+  margin-bottom: 2px;
+}
+
+.ipoteka__form__state-text {
+  margin: 0;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 12px;
+  color: #E0E0E0;
+}
+
+.ipoteka-content {
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid #F2F2F2;
+}
+
+.ipoteka__banks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 24px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #F2F2F2;
+}
+
+.ipoteka__banks-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.ipoteka__banks-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 24px;
+  cursor: pointer;
+}
+
+.ipoteka__banks-back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 48px;
+  height: 48px;
+}
+
+.ipoteka__banks__img {
+  width: 38px;
+  height: 38px;
+}
+
+.ipoteka__banks__desc {
+  border: 1px solid #dedede;
+  padding: 14px;
+}
+
+.ipoteka__banks-arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.ipoteka__banks__button {
+  width: 40px;
+  height: 30px;
+  background: transparent;
+  border: none;
+  background-image: url("../img/ipoteka/arrow.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+}
+
+.ipoteka__banks__button_left {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.ipoteka__desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 24px;
+}
+
+.ipoteka__desc-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.ipoteka__desc-item {
+  display: none;
+}
+
+.ipoteka__desc__image {
+  width: 150px;
+  height: 60px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-bottom: 24px;
+}
+
+.ipoteka__desc__about {
+  margin: 0;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.ipoteka__desc-total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  margin-top: 32px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #F9F9F9;
+  padding: 24px;
+}
+
+.ipoteka__desc__monthly-payment, .ipoteka__desc__amount-of-credit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ipoteka__desc__monthly-payment {
+  margin-bottom: 30px;
+}
+
+.ipoteka__desc__payment {
+  font-size: 18px;
+  line-height: 17px;
+}
+
+.ipoteka__desc__cost {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 17px;
+}
+
+.ipoteka__desc__costCredit {
+  font-size: 20px;
+  line-height: 17px;
+}
+
+.ipoteka__request {
+  padding: 25px;
+}
+
+.ipoteka__request__profitable-terms {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 14px;
+  margin-bottom: 16px;
+}
+
+.ipoteka__request-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ipoteka__request__input {
+  width: 33%;
+  border: 1px solid rgba(24, 24, 24, 0.3);
+}
+
+.ipoteka__request__btn {
+  cursor: pointer;
+  max-height: 45px;
+  color: #fff;
+  background: #CBC56C;
+  border: 1px solid #CBC56C;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+}
+
+.ipoteka__request__agreement {
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 10px;
+  letter-spacing: 0.01em;
+  color: #828282;
+}
+
+.item_active-bank {
+  background-color: #dedede;
+}
+
+.item-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .social {

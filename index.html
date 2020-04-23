@@ -351,6 +351,124 @@
     </div>
   </section>
 
+  <section class="ipoteka">
+    <h2 class="ipoteka__title">Покупка</h2>
+    <div class="container">
+      <div class="ipoteka__block">
+        <form action="" class="ipoteka__form">
+          <h2 class="ipoteka__form__title">Ипотечный калькулятор</h2>
+          <div class="ipoteka__form-price">
+            <span class="ipoteka__form__total-title form-title">Стоимость квартиры, ₽</span>
+            <span class="ipoteka__form__total-price form-price"></span>
+            <input type="range" min="1000000" max="8000000" step="100000" value="3000000" class="ipoteka__form__total-input form-range">
+          </div>
+          <div class="ipoteka__form-fee">
+            <span class="ipoteka__form__fee-title form-title">Первоначальный взнос, ₽</span>
+            <div class="ipoteka__form__fee-block">
+              <span class="ipoteka__form__fee-price form-price"></span>
+              <span class="ipoteka__form__fee-percent form-percent"></span>
+            </div>
+            <input type="range" min="10" max="90" step="1" value="30" class="ipoteka__form__fee-input form-range">
+          </div>
+          <div class="ipoteka__form-time">
+            <span class="ipoteka__form__time-title form-title">Cрок, лет</span>
+            <span class="ipoteka__form__time-let form-price"></span>
+            <input type="range" min="7" max="30" step="1" value="10" class="ipoteka__form__time-input form-range">
+          </div>
+          <div class="ipoteka__form-state">
+            <input type="checkbox" class="ipoteka__form__state-checkbox">
+            <div class="ipoteka__form__state-content">
+              <h4 class="ipoteka__form__state-title form-title">Семейная ипотека с гос.поддержкой</h4> 
+              <p class="ipoteka__form__state-text">Для семей, в&nbsp;которых в&nbsp;период с&nbsp;
+                01.01.2018г.&nbsp;по&nbsp;31.12.2022г. родился 2-й или 3-й ребёнок</p>
+            </div>
+          </div>
+        </form>
+        <div class="ipoteka-content">
+          <div class="ipoteka__banks">
+            <div class="ipoteka__banks-block">
+              <div class="ipoteka__banks-item" data-name="sberbank">
+                <div class="ipoteka__banks-back" style="background-color: #2F9C0A;">
+                  <img src="img/ipoteka/сбербанк.svg" alt="Сбербанк" class="ipoteka__banks__img">
+                </div>
+                <span class="ipoteka__banks__desc item_active-bank" id="0">6,5%</span>
+              </div>
+              <div class="ipoteka__banks-item" data-name="domrfbank">
+                <div class="ipoteka__banks-back" style="background-color: #002330;">
+                  <img src="img/ipoteka/домрфбанк.png" alt="ДомРфБанк" class="ipoteka__banks__img">
+                </div>
+                <span class="ipoteka__banks__desc" id="1">8,3%</span>
+              </div>
+              <div class="ipoteka__banks-item" data-name="promcv">
+                <div class="ipoteka__banks-back" style="background-color: #fa8927;">
+                  <img src="img/ipoteka/промсвязьбанк.svg" alt="Промсвязьбанк" class="ipoteka__banks__img">
+                </div>
+                <span class="ipoteka__banks__desc" id="2">7,9%</span>
+              </div>
+            </div>
+            <div class="ipoteka__banks-arrow">
+              <button class="ipoteka__banks__button"></button>
+              <button class="ipoteka__banks__button ipoteka__banks__button_left"></button>
+            </div>
+          </div>
+          <div class="ipoteka__desc">
+            <div class="ipoteka__desc-list">
+              <div class="ipoteka__desc-item item-active">
+                <img src="img/ipoteka/sber.png" alt="Сбербанк" class="ipoteka__desc__image">
+                <p class="ipoteka__desc__about">
+                  Сбербанк&nbsp;&mdash; крупнейший банк в&nbsp;России, Центральной и&nbsp;Восточной Европе, 
+                  один из&nbsp;ведущих международных финансовых институтов.
+                </p>
+              </div>
+              <div class="ipoteka__desc-item">
+                <img src="img/ipoteka/domrfbank.jpg" alt="ДомРфБанк" class="ipoteka__desc__image">
+                <p class="ipoteka__desc__about">
+                  Условия при покупке квартиры в&nbsp;ЖК&nbsp;&laquo;Измаильский парк&raquo; с&nbsp;помощью
+                    ипотеки от&nbsp;ДОМ.РФ: первый взнос от&nbsp;10%, срок кредита до&nbsp;30&nbsp;лет.
+                </p>
+              </div>
+              <div class="ipoteka__desc-item">
+                <img src="img/ipoteka/promsv.jpg" alt="Промсвязьбанк" class="ipoteka__desc__image">
+                <p class="ipoteka__desc__about">
+                  Условия при покупке квартиры в&nbsp;ЖК&nbsp;&laquo;Измаильский парк&raquo; с&nbsp;помощью 
+                  ипотеки от&nbsp;Промсвязьбанк: первый взнос от&nbsp;0%, срок кредита до&nbsp;25&nbsp;лет.
+                </p>
+              </div>
+            </div>
+            <div class="ipoteka__desc-total">
+              <div class="ipoteka__desc__monthly-payment">
+                <span class="ipoteka__desc__payment">Ежемесячный платёж</span>
+                <div class="ipoteka__desc__totalCost">
+                  <span class="ipoteka__desc__cost ipoteka_monthlyPayment"></span>
+                  <span class="ipoteka__desc__cost ipoteka__desc__cost-p">₽</span> 
+                </div>
+              </div>
+              <div class="ipoteka__desc__amount-of-credit">
+                <span class="ipoteka__desc__payment">Сумма кредита</span>
+                <div class="ipoteka__desc__totalCost">
+                  <span class="ipoteka__desc__costCredit ipoteka__amountOfCredit"></span>
+                  <span class="ipoteka__desc__costCredit ipoteka__desc__cost-p">₽</span> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ipoteka__request">
+            <p class="ipoteka__request__profitable-terms">Получить кредит на выгодных условиях</p>
+            <div class="ipoteka__request-btn">
+              <input type="text" class="input ipoteka__request__input" placeholder="Имя" required>
+              <input type="tel" class="input ipoteka__request__input" placeholder="Телефон" required>
+              <button class="ipoteka__request__btn btn" type="submit">Подать заявку</button>
+            </div>
+            <p class="ipoteka__request__agreement">
+              Нажимая на&nbsp;кнопку &laquo;Подать заявку&raquo;, вы&nbsp;соглашается с&nbsp;условиями
+              Политики обработки персональных данных
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="social">
     <div class="container">
       <div class="social-block">

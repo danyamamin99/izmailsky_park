@@ -1,0 +1,193 @@
+.form
+  &-title, &-price, &-percent
+    display: block
+    font-weight: 300
+    font-size: 14px
+    line-height: 14px
+    margin-bottom: 24px
+  &-price, &-percent
+    margin-bottom: 8px
+.ipoteka
+  margin-bottom: 100px
+  position: relative
+  &::after
+    content: ''
+    display: block
+    background: #CBC56C
+    width: 1px
+    height: 1419px
+    position: absolute
+    bottom: -980px
+    right: 500px
+    z-index: -1
+    transform: rotate(-120deg)
+  &__title
+    position: absolute
+    top: 30%
+    left: 0%
+    transform: rotate(-90deg)
+    font-weight: normal
+    font-size: 24px
+    line-height: 16px
+    letter-spacing: 0.01em
+    text-transform: uppercase
+  &__block
+    display: flex
+    justify-content: space-between
+    padding: 0 75px
+  &__form
+    width: 38%
+    background-color: #413046
+    padding: 40px
+    color: #ffffff
+    margin-right: 10px
+    &__title
+      margin: 0
+      margin-bottom: 32px
+      font-weight: normal
+      font-size: 18px
+      line-height: 16px
+      letter-spacing: 0.01em
+      text-transform: uppercase
+    &-price, &-fee, &-time
+      display: flex
+      flex-direction: column
+      margin-bottom: 24px
+    &__fee-block
+      display: flex
+      justify-content: space-between
+    &-state
+      display: flex
+      justify-content: space-around
+      align-items: center
+    &__state-content
+      margin-left: 16px
+    &__state-title
+      margin: 0
+      margin-bottom: 2px
+    &__state-text
+      margin: 0
+      font-weight: 300
+      font-size: 10px
+      line-height: 12px
+      color: #E0E0E0
+  &-content
+    width: 75%
+    display: flex
+    flex-direction: column
+    border: 1px solid #F2F2F2
+  &__banks
+    display: flex
+    padding: 24px
+    justify-content: space-between
+    align-items: center
+    border-bottom: 1px solid #F2F2F2
+    &-block
+      display: flex
+      overflow: hidden
+    &-item
+      display: flex
+      margin-right: 24px
+      cursor: pointer
+    &-back
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 48px
+      height: 48px
+    &__img
+      width: 38px
+      height: 38px
+    &__desc
+      border: 1px solid #dedede
+      padding: 14px
+    &-arrow
+      display: flex
+      flex-direction: column
+    &__button
+      width: 40px
+      height: 30px
+      background: transparent
+      border: none
+      background-image: url('../img/ipoteka/arrow.png')
+      background-repeat: no-repeat
+      background-position: center center
+      cursor: pointer
+      &_left
+        transform: rotate(180deg)
+  &__desc
+    display: flex
+    justify-content: space-between
+    padding: 24px
+    &-list 
+      display: flex
+      width: 50%
+      flex-direction: column
+    &-item
+      display: none
+    &__image
+      width: 150px
+      height: 60px
+      object-fit: contain
+      margin-bottom: 24px
+    &__about
+      margin: 0
+      font-size: 16px
+      line-height: 18px
+    &-total
+      display: flex
+      width: 50%
+      margin-top: 32px
+      flex-direction: column
+      background: #F9F9F9
+      padding: 24px
+    &__monthly-payment, &__amount-of-credit
+      display: flex
+      justify-content: space-between
+    &__monthly-payment
+      margin-bottom: 30px
+    &__payment
+      font-size: 18px
+      line-height: 17px
+    &__cost
+      font-weight: 500
+      font-size: 20px
+      line-height: 17px
+    &__costCredit
+      font-size: 20px
+      line-height: 17px
+  &__request
+    padding: 25px
+    &__profitable-terms
+      font-weight: 300
+      font-size: 14px
+      line-height: 14px
+      margin-bottom: 16px
+    &-btn
+      display: flex
+      justify-content: space-between
+    &__input
+      width: 33%
+      border: 1px solid rgba(24, 24, 24, 0.3)
+    &__btn
+      cursor: pointer
+      max-height: 45px
+      color: #fff
+      background: #CBC56C
+      border: 1px solid #CBC56C
+      font-size: 16px
+      line-height: 24px
+      letter-spacing: 0.01em
+    &__agreement
+      font-weight: 300
+      font-size: 10px
+      line-height: 10px
+      letter-spacing: 0.01em
+      color: #828282
+
+
+.item_active-bank
+  background-color: #dedede
+.item-active
+  display: flex
+  flex-direction: column
