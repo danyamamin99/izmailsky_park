@@ -91,6 +91,49 @@ body
     border-bottom: 1px solid rgba(24, 24, 24, 0.6)
     &::placeholder
         color: #C4C4C4
+input[type="checkbox"]
+    display: none
+    &:checked + .checkbox::before
+        opacity: 1
+        transition: .2s
+.checkbox
+    display: block
+    position: relative
+    width: 25px
+    height: 16px
+    border: 1px solid #fff
+    &::before
+        content: ''
+        display: block
+        width: 8px
+        height: 8px
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
+        background: #fff
+        opacity: 0
+        transition: .2s
+.slider-range
+    -webkit-appearance: none
+    width: 100%
+    height: 2px
+    background: #fff
+    border-radius: 5px
+.slider-range::-webkit-slider-thumb
+    -webkit-appearance: none
+    appearance: none
+    width: 16px
+    height: 16px
+    background: #413046
+    border: 1px solid #FFFFFF
+    cursor: pointer
+.slider-range::-moz-range-thumb
+    width: 16px
+    height: 16px
+    background: #413046
+    border: 1px solid #FFFFFF
+    cursor: pointer
 .title
     font-size: 32px
     line-height: 120%

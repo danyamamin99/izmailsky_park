@@ -360,7 +360,7 @@
           <div class="ipoteka__form-price">
             <span class="ipoteka__form__total-title form-title">Стоимость квартиры, ₽</span>
             <span class="ipoteka__form__total-price form-price"></span>
-            <input type="range" min="1000000" max="8000000" step="100000" value="3000000" class="ipoteka__form__total-input form-range">
+            <input type="range" min="1000000" max="8000000" step="100000" value="3000000" class="ipoteka__form__total-input form-range slider-range">
           </div>
           <div class="ipoteka__form-fee">
             <span class="ipoteka__form__fee-title form-title">Первоначальный взнос, ₽</span>
@@ -368,19 +368,22 @@
               <span class="ipoteka__form__fee-price form-price"></span>
               <span class="ipoteka__form__fee-percent form-percent"></span>
             </div>
-            <input type="range" min="10" max="90" step="1" value="30" class="ipoteka__form__fee-input form-range">
+            <input type="range" min="10" max="90" step="1" value="30" class="ipoteka__form__fee-input form-range slider-range">
           </div>
           <div class="ipoteka__form-time">
             <span class="ipoteka__form__time-title form-title">Cрок, лет</span>
             <span class="ipoteka__form__time-let form-price"></span>
-            <input type="range" min="7" max="30" step="1" value="10" class="ipoteka__form__time-input form-range">
+            <input type="range" min="7" max="30" step="1" value="10" class="ipoteka__form__time-input form-range slider-range">
           </div>
           <div class="ipoteka__form-state">
-            <input type="checkbox" class="ipoteka__form__state-checkbox">
+            <input type="checkbox" id="stateContent" class="ipoteka__form__state-checkbox">
+            <span class="checkbox"></span>
             <div class="ipoteka__form__state-content">
-              <h4 class="ipoteka__form__state-title form-title">Семейная ипотека с гос.поддержкой</h4> 
-              <p class="ipoteka__form__state-text">Для семей, в&nbsp;которых в&nbsp;период с&nbsp;
-                01.01.2018г.&nbsp;по&nbsp;31.12.2022г. родился 2-й или 3-й ребёнок</p>
+              <label for="stateContent">
+                <h4 class="ipoteka__form__state-title form-title">Семейная ипотека с гос.поддержкой</h4> 
+                <p class="ipoteka__form__state-text">Для семей, в&nbsp;которых в&nbsp;период с&nbsp;
+                  01.01.2018г.&nbsp;по&nbsp;31.12.2022г. родился 2-й или 3-й ребёнок</p>
+              </label>
             </div>
           </div>
         </form>

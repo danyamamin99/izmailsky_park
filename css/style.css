@@ -131,6 +131,66 @@ body {
   color: #C4C4C4;
 }
 
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked + .checkbox::before {
+  opacity: 1;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.checkbox {
+  display: block;
+  position: relative;
+  width: 25px;
+  height: 16px;
+  border: 1px solid #fff;
+}
+
+.checkbox::before {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #fff;
+  opacity: 0;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.slider-range {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.slider-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background: #413046;
+  border: 1px solid #FFFFFF;
+  cursor: pointer;
+}
+
+.slider-range::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  background: #413046;
+  border: 1px solid #FFFFFF;
+  cursor: pointer;
+}
+
 .title {
   font-size: 32px;
   line-height: 120%;
@@ -804,12 +864,13 @@ button:active, button:focus, input:focus {
 }
 
 .ipoteka__form__state-content {
-  margin-left: 16px;
+  margin-left: 15px;
 }
 
 .ipoteka__form__state-title {
   margin: 0;
   margin-bottom: 2px;
+  cursor: pointer;
 }
 
 .ipoteka__form__state-text {
@@ -818,6 +879,7 @@ button:active, button:focus, input:focus {
   font-size: 10px;
   line-height: 12px;
   color: #E0E0E0;
+  cursor: pointer;
 }
 
 .ipoteka-content {
