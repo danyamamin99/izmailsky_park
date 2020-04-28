@@ -205,6 +205,28 @@ button:active, button:focus, input:focus {
   outline-color: none !important;
 }
 
+@-webkit-keyframes move-line {
+  0% {
+    -webkit-transform: translateX(-4em) skewX(-45deg);
+            transform: translateX(-4em) skewX(-45deg);
+  }
+  100% {
+    -webkit-transform: translateX(15em) skewX(-45deg);
+            transform: translateX(15em) skewX(-45deg);
+  }
+}
+
+@keyframes move-line {
+  0% {
+    -webkit-transform: translateX(-4em) skewX(-45deg);
+            transform: translateX(-4em) skewX(-45deg);
+  }
+  100% {
+    -webkit-transform: translateX(15em) skewX(-45deg);
+            transform: translateX(15em) skewX(-45deg);
+  }
+}
+
 .header {
   padding: 24px;
 }
@@ -584,10 +606,25 @@ button:active, button:focus, input:focus {
 }
 
 .presentation__form__button {
+  position: relative;
   cursor: pointer;
   color: #FFFFFF;
   border: 1px solid #CBC56C;
   background-color: #CBC56C;
+  overflow: hidden;
+}
+
+.presentation__form__button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 1.5em;
+  height: 100%;
+  -webkit-transform: translateX(-4em) skewX(-45deg);
+          transform: translateX(-4em) skewX(-45deg);
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-animation: move-line 2s infinite;
+          animation: move-line 2s infinite;
 }
 
 .presentation__image {
@@ -1081,14 +1118,29 @@ button:active, button:focus, input:focus {
 }
 
 .ipoteka__request__btn {
-  cursor: pointer;
+  position: relative;
   max-height: 45px;
-  color: #fff;
-  background: #CBC56C;
-  border: 1px solid #CBC56C;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.01em;
+  color: #fff;
+  background: #CBC56C;
+  border: 1px solid #CBC56C;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.ipoteka__request__btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 1.5em;
+  height: 100%;
+  -webkit-transform: translateX(-4em) skewX(-45deg);
+          transform: translateX(-4em) skewX(-45deg);
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-animation: move-line 2s infinite;
+          animation: move-line 2s infinite;
 }
 
 .ipoteka__request__agreement {

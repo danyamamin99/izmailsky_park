@@ -169,3 +169,20 @@ const calculation = (totalCost, anInitialFee, creditTerm) => {
   }
 }
 calculation(totalCostRange.value, anInitialFeeLet, creditTermRange.value);
+
+
+////////////////////////////////////////////////////////////////////////////////
+// Маски для инпутов
+let phonePresentation = document.getElementById('phone-presentation'),
+    phoneIpoteka = document.getElementById('phone-ipoteka'),
+    phoneContact = document.getElementById('phone-contact');
+let maskOptions = {
+  mask: '+{7}(000)000-00-00'
+};
+let maskOptionsPlac = {
+  mask: '+{7}(000)000-00-00',
+  lazy: false,
+};
+let maskPresentation = new IMask(phonePresentation, maskOptions);
+let maskIpoteka = new IMask(phoneIpoteka, maskOptions);
+let maskContact = new IMask(phoneContact, maskOptionsPlac);

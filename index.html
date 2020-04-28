@@ -15,9 +15,9 @@
       <nav class="header__nav ">
         <div class="header__nav-list">
           <a href="#project" class="header__nav-link">О проекте</a>
-          <a href="" class="header__nav-link">Расположение</a>
+          <a href="#raspol" class="header__nav-link">Расположение</a>
           <a href="#planirovka" class="header__nav-link">Планировки</a>
-          <a href="" class="header__nav-link">Ипотека</a>
+          <a href="#ipoteka" class="header__nav-link">Ипотека</a>
           <a href="#contakt" class="header__nav-link">Контакты</a>          
         </div>
       </nav>
@@ -61,7 +61,7 @@
         <div class="feature__item">
           <span class="feature-item__desc">Месторасположение </span>
           <p class="feature-item__text">Пер. Измаильский 41</p>
-          <a href="" class="feature-item__link">Показать на карте</a>
+          <a href="#raspol" class="feature-item__link">Показать на карте</a>
         </div>
         <div class="feature__item">
           <span class="feature-item__desc">Переменная этажность</span>
@@ -191,7 +191,7 @@
             <h2 class="presentation__form__title title">Получить презентацию жилого комплекса</h2>
             <span class="presentation__form__subtitle">Полная презентация любым удобным для&nbsp;Вас способом</span>
             <div class="presentation__form__field">
-              <input type="tel" name="phonePresentation" class="input presentation__form__input" placeholder="+ 7" required>
+              <input type="tel" name="phonePresentation" class="input presentation__form__input" id="phone-presentation" placeholder="+ 7" required>
               <p class="presentation__form__text">Нажимая на&nbsp;кнопку &laquo;Заказать подбор&raquo;, вы&nbsp;соглашается с&nbsp;условиями Политики обработки персональных данных</p>
             </div>
             <div class="presentation__form__social">
@@ -351,7 +351,7 @@
     </div>
   </section>
 
-  <section class="ipoteka">
+  <section id="ipoteka" class="ipoteka">
     <h2 class="ipoteka__title">Покупка</h2>
     <div class="container">
       <div class="ipoteka__block">
@@ -459,7 +459,7 @@
             <p class="ipoteka__request__profitable-terms">Получить кредит на выгодных условиях</p>
             <div class="ipoteka__request-btn">
               <input type="text" class="input ipoteka__request__input" placeholder="Имя" required>
-              <input type="tel" class="input ipoteka__request__input" placeholder="Телефон" required>
+              <input type="tel" class="input ipoteka__request__input" id="phone-ipoteka" placeholder="Телефон" required>
               <button class="ipoteka__request__btn btn" type="submit">Подать заявку</button>
             </div>
             <p class="ipoteka__request__agreement">
@@ -496,10 +496,10 @@
               Оставьте свой номер телефона, и&nbsp;ваш персональный менеджер свяжется с&nbsp;вами в&nbsp;течение 5&nbsp;минут
             </span>
             <div class="footer__form__field">
-              <input type="tel" name="phoneFooter" class="footer__form__input input" placeholder="+ 7" required>
+              <input type="tel" name="phoneFooter" class="footer__form__input input" id="phone-contact" placeholder="+ 7" required>
               <p class="footer__form__text">Нажимая на&nbsp;кнопку &laquo;Заказать подбор&raquo;, вы&nbsp;соглашается с&nbsp;условиями Политики обработки персональных данных</p>
             </div>
-            <button class="footer__button btn" type="submit">Оставить заявку</button>
+            <button class="footer__button btn " type="submit">Оставить заявку</button>
           </form>
         </div>
         <div class="footer__block">
@@ -549,6 +549,7 @@
     </div>
   </div>
 
+  <script src="https://unpkg.com/imask"></script>
   <script src="js/Slider.js"></script>
   <script src="js/main.js"></script>
 </body>

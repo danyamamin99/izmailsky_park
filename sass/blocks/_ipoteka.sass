@@ -172,14 +172,26 @@
       width: 33%
       border: 1px solid rgba(24, 24, 24, 0.3)
     &__btn
-      cursor: pointer
+      position: relative
       max-height: 45px
-      color: #fff
-      background: #CBC56C
-      border: 1px solid #CBC56C
       font-size: 16px
       line-height: 24px
       letter-spacing: 0.01em
+      color: #fff
+      background: #CBC56C
+      border: 1px solid #CBC56C
+      overflow: hidden
+      cursor: pointer
+      &::before
+        content: ''
+        position: absolute
+        top: 0
+        left 0
+        width: 1.5em
+        height: 100%
+        transform: translateX(-4em) skewX(-45deg)
+        background: rgba(255, 255, 255, 0.3)
+        animation: move-line 2s infinite
     &__agreement
       font-weight: 300
       font-size: 10px

@@ -37,10 +37,22 @@
         border-color:#CBC56C
         transition: all 0.3s ease
     &__button
+      position: relative
       cursor: pointer
       color: #FFFFFF
       border: 1px solid #CBC56C
-      background-color: #CBC56C
+      background-color:#CBC56C
+      overflow: hidden
+      &::before
+        content: ''
+        position: absolute
+        top: 0
+        left 0
+        width: 1.5em
+        height: 100%
+        transform: translateX(-4em) skewX(-45deg)
+        background: rgba(255, 255, 255, 0.3)
+        animation: move-line 2s infinite
   &__image 
     position: relative
     img
@@ -50,6 +62,3 @@
       background-size: contain
       background-repeat: no-repeat
       background-position: center center
-
-        
-        
