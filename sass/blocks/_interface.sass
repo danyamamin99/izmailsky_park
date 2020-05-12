@@ -96,8 +96,10 @@ input[type="checkbox"]
     &:checked + .checkbox::before
         opacity: 1
         transition: .2s
+    &:checked + .checkbox-label
+        border-bottom: 1px solid #fff
 .checkbox
-    display: block
+    display: inline-block
     position: relative
     width: 25px
     height: 16px

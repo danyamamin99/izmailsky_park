@@ -32,7 +32,6 @@ nextBtnRoom.addEventListener('click', roomSlider.nextSlide.bind(roomSlider));
 prevBtnPanoram.addEventListener('click', glazingSlider.prevSlide.bind(glazingSlider));
 nextBtnPanorem.addEventListener('click', glazingSlider.nextSlide.bind(glazingSlider));
 
-//////////////////////////////////////////////////////////////////////////////////////
 // Вкладки
 let tabsList = document.querySelector('.layout__floor-tabs__list'),
     tabsLink = document.querySelectorAll('.layout__floor-tabs__link'),
@@ -55,7 +54,6 @@ tabsList.addEventListener('click', (event) => {
   }
 });
 
-//////////////////////////////////////////////////////////////////////////////////////
 //Ипотечный калькулятор
 // Форма ипотеки
 const ipotekaForm = document.querySelector('.ipoteka__form');
@@ -170,12 +168,11 @@ const calculation = (totalCost, anInitialFee, creditTerm) => {
 }
 calculation(totalCostRange.value, anInitialFeeLet, creditTermRange.value);
 
-
-////////////////////////////////////////////////////////////////////////////////
 // Маски для инпутов
 let phonePresentation = document.getElementById('phone-presentation'),
     phoneIpoteka = document.getElementById('phone-ipoteka'),
-    phoneContact = document.getElementById('phone-contact');
+    phoneContact = document.getElementById('phone-contact'),
+    phoneApartment = document.getElementById('phone-apartment');
 let maskOptions = {
   mask: '+{7}(000)000-00-00'
 };
@@ -186,3 +183,93 @@ let maskOptionsPlac = {
 let maskPresentation = new IMask(phonePresentation, maskOptions);
 let maskIpoteka = new IMask(phoneIpoteka, maskOptions);
 let maskContact = new IMask(phoneContact, maskOptionsPlac);
+let maskApartment = new IMask(phoneApartment, maskOptions);
+
+// Значения для инпутов в Секции Выборки квартиры
+let spanMinFloor = document.querySelector('.span-min-floor');
+let spanMaxFloor = document.querySelector('.span-max-floor');
+let spanMinPrice = document.querySelector('.span-min-price');
+let spanMaxPrice = document.querySelector('.span-max-price');
+let inputFloorLeft = document.querySelector('.apartment__form__floor-left');
+let inputFloorRight = document.querySelector('.apartment__form__floor-right');
+let inputPriceLeft = document.querySelector('.apartment__form__price-left');
+let inputPriceRight = document.querySelector('.apartment__form__price-right');
+
+function minValueFloor() {
+  let inputMin = inputFloorLeft;
+  let inputMax = inputFloorRight;
+
+  inputMin.value = Math.min(inputMin.value, inputMax.value);
+  spanMinFloor.textContent = inputMin.value;
+}
+function maxValueFloor() {
+  let inputMin = inputFloorLeft;
+  let inputMax = inputFloorRight;
+
+  inputMax.value = Math.max(inputMin.value, inputMax.value);
+  spanMaxFloor.textContent = inputMax.value;
+}
+function minValuePrice() {
+  let inputMin = inputPriceLeft;
+  let inputMax = inputPriceRight;
+
+  inputMin.value = Math.min(inputMin.value, inputMax.value);
+  spanMinPrice.textContent = inputMin.value.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');
+}
+function maxValuePrice() {
+  let inputMin = inputPriceLeft;
+  let inputMax = inputPriceRight;
+
+  inputMax.value = Math.max(inputMin.value, inputMax.value);
+  spanMaxPrice.textContent = inputMax.value.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');
+}
+
+inputFloorLeft.addEventListener('input', minValueFloor);
+inputFloorRight.addEventListener('input', maxValueFloor);
+inputPriceLeft.addEventListener('input', minValuePrice);
+inputPriceRight.addEventListener('input', maxValuePrice);
+
+// Отправка данных в консоль с формы выборки квартиры
+let apartmentForm = document.querySelector('#apartment__form');
+let typeOne = document.getElementById('typeOne');
+let typeTwo = document.getElementById('typeTwo');
+let typeThree = document.getElementById('typeThree');
+let typeFour = document.getElementById('typeFour');
+let terrace = document.getElementById('terrace');
+let fireplace = document.getElementById('fireplace');
+let bathroom = document.getElementById('bathroom');
+let playground = document.getElementById('playground');
+let groveView = document.getElementById('groveView');
+let nameForm = document.querySelector('.apartment__form__input')
+let phoneApartmentForm = document.getElementById('phone-apartment');
+
+console.log(typeOne);
+function sendingData(event) {
+  event.preventDefault();
+  changeForm();
+  apartmentForm.reset();
+}
+function changeForm() {
+  let messange = `Здраствуйте, ${nameForm.value}!`;
+
+  if (typeOne.checked || typeTwo.checked || typeThree.checked || typeFour.checked ) messange += ` Выбраны типы квартир: `
+  if (typeOne.checked) messange += `1-комнатная `;
+  if (typeTwo.checked) messange += `2-комнатная `;
+  if (typeThree.checked) messange += `3-комнатная `;
+  if (typeFour.checked) messange += `Двухэтажная`;
+  
+  messange += `! Этаж: ${spanMinFloor.textContent} - ${spanMaxFloor.textContent}! Стоимость ${spanMinPrice.textContent} P - ${spanMaxPrice.textContent} P!`
+  
+  if (terrace.checked || fireplace.checked || bathroom.checked || playground.checked || groveView.checked ) messange += ` Ваши пожелания: `
+  if (terrace.checked) messange +=  `Терраса `;
+  if (fireplace.checked) messange += `Камин `;
+  if (bathroom.checked) messange += `Окно в ванной комнате `;
+  if (playground.checked) messange += `Вид на детскую площадку `;
+  if (groveView.checked) messange += `Вид на рощу`;
+
+  messange += `! Мы вам перезвоним по номеру: ${phoneApartmentForm.value}.`
+
+  console.log(messange);
+}
+
+apartmentForm.addEventListener('submit', sendingData);

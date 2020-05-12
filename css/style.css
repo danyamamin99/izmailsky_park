@@ -141,8 +141,12 @@ input[type="checkbox"]:checked + .checkbox::before {
   transition: .2s;
 }
 
+input[type="checkbox"]:checked + .checkbox-label {
+  border-bottom: 1px solid #fff;
+}
+
 .checkbox {
-  display: block;
+  display: inline-block;
   position: relative;
   width: 25px;
   height: 16px;
@@ -708,6 +712,173 @@ button:active, button:focus, input:focus {
   opacity: 1;
   -webkit-transition: opacity .6s linear;
   transition: opacity .6s linear;
+}
+
+.apartment {
+  margin-bottom: 400px;
+}
+
+.apartment-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 75px;
+}
+
+.apartment-block {
+  position: relative;
+  background: url("../img/apartment/apartment-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 680px;
+}
+
+.apartment__form-block {
+  position: absolute;
+  top: 80%;
+  left: 15px;
+  width: 1270px;
+  padding: 50px 70px;
+  background: #413046;
+}
+
+.apartment__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #fff;
+}
+
+.apartment__form-title {
+  font-size: 24px;
+  line-height: 16px;
+  color: #FFFFFF;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.apartment__form-item {
+  margin: 0;
+  padding: 20px;
+  border-right: 1px solid #fff;
+}
+
+.apartment__form-item:last-child {
+  border-right: none;
+}
+
+.apartment__form-item:nth-child(2) {
+  padding: 0;
+}
+
+.apartment__form-type {
+  margin-bottom: 30px;
+}
+
+.apartment__form-subtitle {
+  margin: 0;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+
+.apartment__form__label {
+  padding-bottom: 3px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+}
+
+.apartment__form__label-block {
+  margin-left: 10px;
+}
+
+.apartment__form-floor {
+  padding: 20px 20px 50px;
+  border-bottom: 1px solid #fff;
+}
+
+.apartment__form-price {
+  padding: 20px;
+}
+
+.apartment__form__type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.apartment__form__type:last-child {
+  margin-bottom: 0;
+}
+
+.apartment__form__floor-spans, .apartment__form__price-spans {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.apartment__form__floor-inputs, .apartment__form__price-inputs {
+  position: relative;
+  width: 370px;
+}
+
+.apartment__form__floor-input, .apartment__form__price-input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+}
+
+.apartment__form__floor-input::-webkit-slider-thumb, .apartment__form__price-input::-webkit-slider-thumb {
+  background-color: #fff;
+  pointer-events: all;
+}
+
+.apartment__form__input {
+  font-size: 16px;
+  line-height: 16px;
+  border-bottom-color: rgba(255, 255, 255, 0.6);
+}
+
+.apartment__form__button {
+  margin: 0;
+  border: 1px solid #fff;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  cursor: pointer;
+}
+
+.apartment__form__button:hover {
+  background: #ffffff;
+  color: #413046;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.apartment__form__text {
+  max-width: 210px;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 10px;
+  color: #F9F9F9;
 }
 
 .layout {

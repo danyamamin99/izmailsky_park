@@ -231,6 +231,144 @@
     </div>
   </section>
 
+  <section class="apartment">
+    <div class="container">
+      <div class="apartment-title">
+        <h2 class="title">Выберите свою квартиру</h2>
+      </div>
+      <div class="apartment-block">
+        <div class="apartment__form-block">
+          <div>
+            <h3 class="title apartment__form-title">Индивидуальный подбор квартиры</h3>
+          </div>
+          <form class="apartment__form" id="apartment__form">
+            <div class="apartment__form-item">
+              <div class="apartment__form-type">
+                <h4 class="apartment__form-subtitle">Тип квартиры</h4>
+              </div>
+              <div class="apartment__form__type">
+                <input type="checkbox" id="typeOne" class="apartment__form-checkbox">
+                <label for="typeOne" class="apartment__form__label checkbox-label">
+                  1-комнатная
+                </label>
+              </div>
+              <div class="apartment__form__type">
+                <input type="checkbox" id="typeTwo" class="apartment__form-checkbox">
+                <label for="typeTwo" class="apartment__form__label checkbox-label">
+                  2-комнатная
+                </label>
+              </div>
+              <div class="apartment__form__type">
+                <input type="checkbox" id="typeThree" class="apartment__form-checkbox">
+                <label for="typeThree" class="apartment__form__label checkbox-label">
+                  3-комнатная
+                </label>
+              </div>
+              <div class="apartment__form__type">
+                <input type="checkbox" id="typeFour" class="apartment__form-checkbox">
+                <label for="typeFour" class="apartment__form__label checkbox-label">
+                  Двухэтажная
+                </label>
+              </div>
+            </div>
+            <div class="apartment__form-item">
+              <div class="apartment__form-group">
+                <div class="apartment__form-floor">
+                  <div class="apartment__form-type">
+                    <h4 class="apartment__form-subtitle">Этаж</h4>
+                  </div>
+                  <div class="apartment__form__floor-spans">
+                    <span class="apartment__form__span-text span-min-floor">2</span>
+                    <span class="apartment__form__span-text span-max-floor">8</span>
+                  </div>
+                  <div class="apartment__form__floor-inputs">
+                    <input type="range" min="1" max="10" step="1" value="2" class="apartment__form__floor-input apartment__form__floor-left slider-range">
+                    <input type="range" min="1" max="10" step="1" value="8" class="apartment__form__floor-input apartment__form__floor-right slider-range">
+                  </div>
+                </div>
+                <div class="apartment__form-price">
+                  <div class="apartment__form-type">
+                    <h4 class="apartment__form-subtitle">Стоимость</h4>
+                  </div>
+                  <div class="apartment__form__price-spans">
+                    <span class="apartment__form__span-text span-min-price">1 600 000</span>
+                    <span class="apartment__form__span-text span-max-price">6 400 000</span>
+                  </div>
+                  <div class="apartment__form__price-inputs">
+                    <input type="range" min="1000000" max="8000000" step="100000" value="1600000" class="apartment__form__price-input apartment__form__price-left slider-range">
+                    <input type="range" min="1000000" max="8000000" step="100000" value="6400000" class="apartment__form__price-input apartment__form__price-right slider-range">
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="apartment__form-item">
+              <div class="apartment__form-type">
+                <h4 class="apartment__form-subtitle">Ваши пожелания</h4>
+              </div>
+              <div class="apartment__form__type">
+                <input type="checkbox" id="terrace" class="apartment__form-checkbox">
+                <span class="checkbox" style="width: 16px"></span>
+                <div class="apartment__form__label-block">
+                  <label for="terrace" class="apartment__form__label">Терраса</label>
+                </div>
+              </div>
+              <div class="apartment__form__type">
+                <input type="checkbox" id="fireplace" class="apartment__form-checkbox">
+                <span class="checkbox" style="width: 16px"></span>
+                <div class="apartment__form__label-block">
+                  <label for="fireplace" class="apartment__form__label">Камин</label>
+                </div>
+              </div>
+              <div class="apartment__form__type">
+                <input type="checkbox" id="bathroom" class="apartment__form-checkbox">
+                <span class="checkbox" style="width: 16px"></span>
+                <div class="apartment__form__label-block">
+                  <label for="bathroom" class="apartment__form__label">Окно в ванной комнате</label>
+                </div>
+              </div>
+              <div class="apartment__form__type">
+                <input type="checkbox" id="playground" class="apartment__form-checkbox">
+                <span class="checkbox" style="width: 16px"></span>
+                <div class="apartment__form__label-block">
+                  <label for="playground" class="apartment__form__label">Вид на детскую площадку</label>
+                </div>
+              </div>
+              <div class="apartment__form__type">
+                <input type="checkbox" id="groveView" class="apartment__form-checkbox">
+                <span class="checkbox" style="width: 16px"></span>
+                <div class="apartment__form__label-block">
+                  <label for="groveView" class="apartment__form__label">Вид на рощу</label>
+                </div>
+              </div>
+            </div>
+            <div class="apartment__form-item">
+              <div class="apartment__form-type">
+                <h4 class="apartment__form-subtitle">Получить результаты</h4>
+              </div>
+              <div class="apartment__form__type">
+                <input type="text" name="apartment-name" class="apartment__form__input input" id="name-apartment" placeholder="Имя" required>
+              </div>
+              <div class="apartment__form__type">
+                <input type="tel" name="apartment-phone" class="apartment__form__input input" id="phone-apartment" placeholder="Телефон" required>
+              </div>
+              <div class="apartment__form__type">
+                <button type="submit" class="btn apartment__form__button">Получить подборку</button>
+              </div>
+              <div class="apartment__form__type">
+                <span class="apartment__form__text">
+                  Нажимая на&nbsp;кнопку &laquo;Заказать 
+                  подбор&raquo;, Вы&nbsp;соглашается 
+                  с&nbsp;условиями Политики обработки персональных данных
+                </span>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="planirovka" class="layout">
     <div class="container">
       <div class="layout-block">
